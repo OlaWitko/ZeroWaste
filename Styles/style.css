@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+p,a,li,td,th{
+    font-size:16px;
+    
+}
+.container {
+    margin:0px 10%;
+    width:70%;
+    padding: 2.5% 5%;
+    text-align: justify;
+    min-height:100vh;
+}
+
+header .container{
+    min-height:unset;
+    height:80px;
+    padding:unset;
+    margin:auto;
+}
+
+.container-main{
+    background-color:#e5f4e7;
+}
+
+footer {
+    padding: 3px;
+    color: white;
+    background-color: #F2A7A0;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #10161a;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    margin: 0px;
+}
+
+
+.side-menu-container,
+.side-menu,
+.side-menu>a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.side-menu-container {
+    position: fixed;
+    height: 100vh;
+    left: 0px;
+    z-index:10;
+}
+
+.side-menu>a {
+    margin: 5px 0px;
+    height: 40px;
+    background-color: grey;
+}
+
+.side-menu>a:hover {
+    margin: 5px 0px;
+    height: 40px;
+    color: #fff;
+    background-color: #000;
+}
+
+.images {
+    -moz-box-shadow: 10px 10px 10px rgb(185, 172, 172);
+    -webkit-box-shadow: 10px 10px 10px rgb(185, 172, 172);
+    box-shadow: 10px 10px 5px rgb(185, 172, 172);
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    max-width: 500px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+ul,
+ol {
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: top;
+    width: 40%;
+    border: 5%;
+    align-content: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table,
+th,
+td {
+    border: 0.5px dotted black;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: #F9F9F9;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+hr {
+    width: 80%;
+    color: #4f5558;
+    border: 1px solid
+}
+
+
+
+.landing_page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+}
+
+.landing_page img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:.5;
+}
+
+#zegar {
+    width: 300px;
+    height: 50px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: red;
+    animation: colors 5s infinite;
+}
+
+footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+@keyframes colors {
+    0% {
+        color: red;
+    }
+    19% {
+        color: red;
+    }
+    20% {
+        color: rgb(255, 255, 0);
+    }
+    39% {
+        color: rgb(255, 255, 0);
+    }
+    40% {
+        color: rgb(50, 255, 0);
+    }
+    59% {
+        color: rgb(50, 255, 0);
+    }
+    60% {
+        color: rgb(0, 89, 255);
+    }
+    79% {
+        color: rgb(0, 89, 255);
+    }
+    80% {
+        color: rgb(255, 255, 255);
+    }
+    99% {
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        color: red;
+    }
+}
+

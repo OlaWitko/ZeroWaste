@@ -1,0 +1,157 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100% !important;
+    z-index: 10;
+    height:80px;
+    padding:0px 30px;
+    transition:.3s;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    height:80px;
+}
+
+header .logo {
+    width:65px;
+    animation: show 2s;
+}
+
+header .logo i{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 8px;
+    color:white;
+    transition:2s;
+}
+
+header .text_logo{
+    margin-top: 5px;
+    font-size: 12px;
+    color:white;
+    transition:.3s;
+}
+
+header nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+header nav a {
+    text-decoration:none;
+    color: white;
+    transition: .3s;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu_gorne i {
+    display:none;
+}
+
+@media (min-width:600px) and (max-width:800px){
+    .menu_gorne i {
+        display:block;
+        margin-bottom:-35px;
+    }
+    .menu_gorne span {
+        display:none;
+    }
+}
+
+header nav a:hover  {
+    color:rgb(10, 120, 10);
+}
+
+header nav a:visited {
+    color:rgb(30, 46, 38);
+}
+
+header nav a:focus  {
+    color:rgb(25, 67, 185);
+}
+
+
+
+.scroll {
+    background-color:#e5f4e7;
+}
+
+.scroll a p{
+    color:black;
+}
+
+.scroll .logo i{
+    color:black;
+}
+
+.scroll .text_logo{
+    color:black;
+}
+
+
+.logo:hover i{
+    transform:rotate(360deg);
+}
+
+#icon {
+    display: none;
+}
+
+
+
+a:hover {
+    color: black
+}
+
+#cannabis #icon {
+    padding: 10px;
+}
+
+
+.logo {
+    transition-timing-function: ease-in;
+    transition: transform 2s;
+}
+
+
+@media screen and (max-width: 900px) and (min-width:700px) {
+    .text_logo {
+        display: none !important;
+    }
+    #cannabis {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .text_logo {
+        display: none !important;
+    }
+    .text {
+        display: none !important;
+    }
+    #icon {
+        display: block;
+    }
+    #cannabis {
+        display: block;
+    }
+}
+
+@keyframes show{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
